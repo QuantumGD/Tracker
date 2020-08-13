@@ -1,6 +1,9 @@
 # Cal tracker
+
 the Calories Tracker application
+
 1.Sign in & Sign up
+
 ![image](https://github.com/QuantumGD/Tracker/blob/master/pic/sign_in.png)
 ![image](https://github.com/QuantumGD/Tracker/blob/master/pic/sign_up.png)
 
