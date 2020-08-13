@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightblue"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0775A7"
+            android:text="Cal Tracker"
+            android:textSize="60dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:background="@color/lightblue"
+            android:src="@drawable/diet"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@color/lightblue"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/ck_setg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint=" Cal goal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/ck_toyStep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Total Steps"
+                android:textSize="35dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:orientation="horizontal"
+            android:background="@color/lightblue"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/ck_consum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Total Cal consumed"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ck_burn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Total Cal burned"
+                android:textSize="35dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ck_show"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@color/blue"
+            android:layout_marginTop="57dp"
+            android:text="Show"
+            android:textSize="25dp"
+            android:textColor="@color/white" />
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

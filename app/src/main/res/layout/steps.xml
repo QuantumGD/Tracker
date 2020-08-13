@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0775A7"
+            android:text="Set your steps"
+            android:textSize="60dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:src="@drawable/run"
+            android:background="@color/lightblue"
+            tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+         <EditText
+             android:id="@+id/v_steps"
+             android:layout_marginTop="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:hint="enter your today steps"/>
+        <TextView
+            android:id="@+id/conv_steps"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:hint=""/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/addstep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:text="add steps"/>
+        <EditText
+            android:id="@+id/v_removeSteps"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter the steps to remove steps"/>
+        <Button
+            android:id="@+id/btnrestep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:text="remove steps"/>
+
+        <TextView
+            android:id="@+id/v_lsteps"
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:divider="@null"
+            android:textStyle="bold|italic"></TextView>
+        <Button
+             android:id="@+id/btnShowr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:text="show results"/>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    tools:showIn="@layout/app_bar_homepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <TextClock
+        android:id="@+id/mtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timeZone="GMT+1000"
+        android:format24Hour="E dd-MMM-yyyy k:mm"
+        android:format12Hour="@null"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/lightblue"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/fitnessgroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/setcal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="set your daily Cal goal">
+        </EditText>
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:layout_marginTop="10dp"
+            android:text="edit" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:text="save" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

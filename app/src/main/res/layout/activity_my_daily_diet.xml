@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my_daily_diet">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0775A7"
+            android:text="My daily diet"
+            android:textSize="70dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            tools:ignore="MissingConstraints">
+
+            <Spinner
+              android:id="@+id/categ"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+            </Spinner>
+
+            <Spinner
+              android:id="@+id/nitem"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+
+            </Spinner>
+        </LinearLayout>
+            <android.support.v7.widget.SearchView
+                android:id="@+id/getsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                app:iconifiedByDefault="false"
+                app:queryHint="Enter your food"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/des"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:background="@color/lightblue"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/ima"
+                android:background="@color/lightblue"/>
+
+            <TextView
+                android:id="@+id/fooditem"
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:background="@color/lightblue"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+            <Button
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_marginTop="20dp"
+                android:focusableInTouchMode="false"
+                android:text="search" />
+
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>
